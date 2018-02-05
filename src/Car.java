@@ -13,7 +13,7 @@ public class Car {
 	private int year;
 	private double price;
 	
-	public Car () {// this is needed // no return types in constructors 
+	public Car () {// this is needed // no return types in constructors // you know this is a constructor based on the fact that its name is the same as the name of the class
 		make = "default";
 		model = "default";
 		year = 0;
@@ -65,7 +65,7 @@ public class Car {
 	
 	//@Override
 	public String toString() {
-		return "Make: " + make + "\t" + "Model: " + model + "\t" + "Year: " + year + "\t" + "Price: $" + price;
+		return String.format("Make: %-10s Model: %-10s Year: %-10s Price: $%-10s", make, model, year, price);
 	}
 	
 
